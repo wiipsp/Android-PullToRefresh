@@ -1,6 +1,8 @@
 # PLEASE NOTE, THIS PROJECT IS NO LONGER BEING MAINTAINED
+[![](https://jitpack.io/v/wiipsp/Android-PullToRefresh.svg)](https://jitpack.io/#wiipsp/Android-PullToRefresh)
 
 Add SwipeMenuListView pulltorefresh
+
 * * *
 
 # Pull To Refresh Views for Android
