@@ -3,11 +3,13 @@ apply plugin: 'com.github.dcendents.android-maven'
 group='com.github.wiipsp'
 
 android {
-    compileSdkVersion "$rootProject.compileSdkVersion".toInteger()
+    compileSdkVersion 28
 
     defaultConfig {
-        minSdkVersion "$rootProject.minSdkVersion".toInteger()
-        targetSdkVersion "$rootProject.targetSdkVersion".toInteger()
+        minSdkVersion 14
+        targetSdkVersion 28
+        versionCode 1
+        versionName "2.1.3"
     }
 
     buildTypes {
