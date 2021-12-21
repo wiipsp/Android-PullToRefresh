@@ -1,0 +1,32 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion "$rootProject.compileSdkVersion".toInteger()
+
+    defaultConfig {
+        minSdkVersion "$rootProject.minSdkVersion".toInteger()
+        targetSdkVersion "$rootProject.targetSdkVersion".toInteger()
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    //这个是解决lint报错的代码
+    lintOptions {
+        abortOnError false
+    }
+}
+
+dependencies {
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation "androidx.appcompat:appcompat:1.0.2"
+    implementation 'com.google.android.material:material:1.0.0'
+    implementation project(':library')
+    implementation project(':PullToRefreshListFragment')
+    implementation project(':PullToRefreshViewPager')
+}
